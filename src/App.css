@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-bg: #3d3d3d;
+  --secondary-bg: #2d2d2d;
+  --neutral-gray: #666;
+  --accent-color: #ff7eb9;
+  --text-color: #fff;
+  --border-color: #ccc;
+  --medium-pink: #ffa3c0;
+  --dusty-rose: #e6738e;
+  --rose-gold: #b76e79;
+  --link-hover-color: #ff7eb9;
+  --soft-blue: #87ceeb;
+  --subdued-green: #8fbc8f;
+  --deep-purple: #800080;
+  --warm-yellow: #ffd700;
+}
+
+body {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.app-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #800080;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(1px);
+  z-index: 5;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(61, 61, 61, 1);
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  z-index: 10; /* Ensure the navbar is above other elements */
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+.nav-item svg {
+  margin: 0 4px 2px 2px;
+}
+.nav-item a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a:hover {
+  color: var(--link-hover-color);
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: linear-gradient(
+    to bottom,
+    var(--secondary-bg),
+    var(--primary-bg)
+  );
+  filter: saturate(2);
+  overflow: hidden;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 10px;
+}
+.background-animation-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: var(--soft-blue);
+  filter: blur(80px);
+  animation: animationBackground 6s linear infinite;
+}
+@keyframes animationBackground {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 120%;
+  }
+}
+
+.square {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: inherit;
+  filter: brightness(1.1);
+  transition: background 2s ease;
+}
+
+/* .square:hover {
+  background: var(--accent-color);
+  transition-duration: 1s;
+} */
+.main-content {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  align-self: flex-start;
+  top: 75px;
+  z-index: 50;
+  max-width: 900px;
+}
+.heading {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+.heading.fade-in {
+  /* Add opacity to fade in when the fade-in class is present */
+  opacity: 1;
+}
+.heading div {
+  padding: 5px;
+  display: flex;
+}
+.heading span {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  margin-left: 10px;
+}
+.heading span:nth-child(n + 13):nth-child(-n + 19) {
+  color: var(--accent-color);
+}
+.projects {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0 20px 0;
+}
+
+.projects-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  width: 250px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  cursor: pointer; /* Optional: Add a pointer cursor on hover */
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-description {
+  padding: 16px;
+}
+.skills-container {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skill-icon img {
+  width: 24px;
+  height: 24px;
+}
+.skill-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.skill-card {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(
+    33.33% - 20px
+  ); /* Set the width to one-third of the container minus margins */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+.project-image {
+  opacity: 0.9;
+  transition: opacity 0.5s ease-in-out; /* Adjust the transition duration and timing function as needed */
+}
+
+.project-image.hovered {
+  opacity: 1; /* Adjust the desired opacity during hover */
+}
