@@ -13,6 +13,7 @@ import {
 import HeadingAnimation from "./components/HeadingAnimation";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import ProjectsSlider from "./components/projects/ProjectsSlider";
 
 function App() {
   const [isPageLoaded, setPageLoaded] = useState(false);
@@ -83,7 +84,8 @@ function App() {
               <HeadingAnimation />
             </div>
             <div>
-              <Projects />
+              <ProjectsSlider />
+              {/*    <Projects /> */}
             </div>
             <div>
               <div role="heading">Skills</div>
