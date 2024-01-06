@@ -11,9 +11,10 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import HeadingAnimation from "./components/HeadingAnimation";
-import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import ProjectsSlider from "./components/projects/ProjectsSlider";
+import Contact from "./components/contact/Contact";
+import Layout from "./components/layout/Layout";
 
 function App() {
   const [isPageLoaded, setPageLoaded] = useState(false);
@@ -29,71 +30,8 @@ function App() {
   }, []);
   return (
     <>
-      <div>
-        <nav className="navbar">
-          <ul>
-            <li className="nav-item">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub /> GitHub
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#home">
-                <FaHome /> Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#about">
-                <FaUser /> About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#projects">
-                <FaProjectDiagram /> Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#contact">
-                <FaEnvelope /> Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#resume">
-                <FaFileAlt /> Resume
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin /> LinkedIn
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className="container">
-          <BackgroundAnimation />
-          <div className="main-content">
-            <div className={`heading ${isPageLoaded ? "fade-in" : ""}`}>
-              <HeadingAnimation />
-            </div>
-            <div>
-              <ProjectsSlider />
-              {/*    <Projects /> */}
-            </div>
-            <div>
-              <div role="heading">Skills</div>
-              <Skills />
-            </div>
-          </div>
-        </div>
-      </div>
+      <BackgroundAnimation />
+      <Layout />
     </>
   );
 }

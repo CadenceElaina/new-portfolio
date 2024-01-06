@@ -1,3 +1,28 @@
+:root {
+  --primary-bg: #3d3d3d;
+  --secondary-bg: #2d2d2d;
+  --neutral-gray: #666;
+  --accent-color: #ff7eb9;
+  --accent-color1: #61dafb;
+  --accent-color2: #ffb862;
+  --accent-color3: #1a73e8;
+  --link-hover: #0d5cb6;
+  --button-color: #61dafb;
+  --button-color1: #2b2b2b;
+  --link-color: #61dafb;
+  --link-color1: #ffb862;
+  --border-color: #3e3e3e;
+  --text-color: #fff;
+  --border-color: #ccc;
+  --medium-pink: #ffa3c0;
+  --dusty-rose: #e6738e;
+  --rose-gold: #b76e79;
+  --link-hover-color: #ff7eb9;
+  --soft-blue: #87ceeb;
+  --subdued-green: #8fbc8f;
+  --deep-purple: #800080;
+  --warm-yellow: #ffd700;
+}
 .projects-slider {
   position: relative;
   width: 100%;
@@ -6,21 +31,18 @@
   justify-content: center;
 }
 .project-card {
-  color: #111;
-  background-color: var(--medium-pink);
-  max-width: 100%;
-  height: 75vh;
+  color: var(--text-color);
+  background-color: var(--secondary-bg);
   border: 1px solid var(--border-color);
+  max-height: 85vh;
   border-radius: 8px;
   overflow: hidden;
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   position: relative;
-  margin-bottom: 10vh;
 }
 .projects {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -42,11 +64,18 @@
 }
 
 .project-image {
-  width: 100%;
-  height: 80%;
+  width: 900px;
+  height: 600px;
+  max-height: 70vh;
   object-fit: cover;
 }
+.project-image {
+  transition: opacity 0.5s ease; /* Adjust the duration and easing function as needed */
+}
 
+.project-image.hovered {
+  opacity: 0;
+}
 .project-description {
   font-size: 1.2rem;
   padding: 16px;
@@ -58,7 +87,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.5rem;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color3);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -67,13 +96,13 @@
   transition: background-color 0.3s ease-in-out;
 }
 .right-slider-button {
-  right: -100px;
+  right: 10px;
 }
 
 .left-slider-button {
-  left: -150px;
+  left: -10px;
 }
 .right-slider-button:hover,
 .left-slider-button:hover {
-  background-color: var(--dusty-rose);
+  background-color: var(--link-hover);
 }

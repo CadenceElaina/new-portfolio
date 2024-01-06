@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { projects } from "./ProjectsData";
 import "./projects.css";
 const ProjectsSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState(0);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
@@ -16,13 +18,47 @@ const ProjectsSlider = () => {
 
   const currentProject = projects[currentIndex];
 
+  useEffect(() => {
+    let intervalId;
+
+    if (isHovered) {
+      // Start looping through images of the hovered project
+      intervalId = setInterval(() => {
+        setHoveredIndex(
+          (prevIndex) => (prevIndex + 1) % projects[currentIndex].images.length
+        );
+      }, 1500); // Adjust the interval as needed
+    } else {
+      // Clear interval when not hovering
+      clearInterval(intervalId);
+    }
+
+    // Clear interval on component unmount to avoid memory leaks
+    return () => clearInterval(intervalId);
+  }, [isHovered, currentIndex]);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    setHoveredIndex(0); // Reset the index when not hovering
+  };
+
   return (
     <div className="projects-slider">
       <div className="project-card">
         <img
-          src={currentProject.images[0]}
+          src={
+            isHovered
+              ? currentProject.images[hoveredIndex]
+              : currentProject.images[0]
+          }
           alt={currentProject.alt}
           className="project-image"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         />
 
         <div className="project-description">

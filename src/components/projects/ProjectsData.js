@@ -3,7 +3,8 @@ export const projects = [
     title: "Finhub",
     alt: "Finhub / Google Finance Clone Project Image",
     description: "finance app",
-    technologies: "React, TypeScript, ReCharts, Node.js, MongoDB",
+    technologies:
+      "React, TypeScript, ReCharts, Node.js, ExpressJS, and MongoDB",
     images: [
       "src/assets/finhub/finhub1.png",
       "src/assets/finhub/finhub2.png",
@@ -18,19 +19,8 @@ export const projects = [
     title: "Zwitter",
     alt: "Zwitter / Twitter Clone Project Image",
     description: "Twitter clone",
-    technologies: "React, TypeScript, Node.js, MongoDB",
-    images: [
-      "src/assets/zwitter/zwitter1.1.png",
-      "src/assets/zwitter/zwitter1.2.png",
-      "src/assets/zwitter/zwitter1.3.png",
-      "src/assets/zwitter/zwitter1.4.png",
-    ],
-  },
-  {
-    title: "Zwitter",
-    alt: "Zwitter / Twitter Clone Project Image",
-    description: "Twitter clone",
-    technologies: "React, TypeScript, Node.js, MongoDB",
+    technologies:
+      "React, NextJS, TypeScript, Prisma, TailwindCSS, Zustand, and MongoDB",
     images: [
       "src/assets/zwitter/zwitter1.1.png",
       "src/assets/zwitter/zwitter1.2.png",
@@ -43,7 +33,7 @@ export const projects = [
     alt: "Blogs Application Project Image",
     description:
       "Create, like, comment, edit, and delete blogs. See other users blogs.",
-    technologies: "React, TypeScript, Node.js, MongoDB",
+    technologies: "React, TypeScript, Node.js, ExpressJS, MongoDB",
     images: [
       "src/assets/blogs/blogs1.png",
       "src/assets/blogs/blogs2.png",
@@ -56,7 +46,7 @@ export const projects = [
     title: "Library Web App",
     alt: "Library Web App Project Image",
     description: "Add your favorite books to the library",
-    technologies: "React, TypeScript, Node.js, MongoDB",
+    technologies: "React, Node.js, ExpressJS, and MongoDB",
     images: [
       "src/assets/library/library1.png",
       "src/assets/library/library2.png",
@@ -80,7 +70,7 @@ export const projects = [
     alt: "Inflation Calculator Project Image",
     description:
       "See how purchasing power of the dollar has changed since 1913!",
-    technologies: "React, TailwindCSS",
+    technologies: "React and TailwindCSS",
     images: [
       "src/assets/inflationCalculator/calculator1.png",
       "src/assets/inflationCalculator/calculator2.png",
@@ -91,7 +81,7 @@ export const projects = [
     alt: "Old Finhub Project Image",
     description:
       "Get quotes on your favorite stocks, add stocks to your watchlist, get news, and charts",
-    technologies: "React, RapidAPI",
+    technologies: "React, Bootstrap, and RapidAPI",
     images: [
       "src/assets/oldfinhub/oldfinhub1.png",
       "src/assets/oldfinhub/oldfinhub2.png",
@@ -112,7 +102,7 @@ export const projects = [
     title: "Phonebook",
     alt: "Phonebook Project Image",
     description: "Add to the phonebook",
-    technologies: "ReactJS, NodeJS, MongoDB",
+    technologies: "ReactJS, NodeJS, ExpressJS, and MongoDB",
     images: ["src/assets/phonebook/phonebook.png"],
   },
   {
@@ -147,7 +137,7 @@ export const projects = [
     title: "Notes",
     alt: "Notes Web App Project Image",
     description: "Notes full-stack app",
-    technologies: "ReactJS",
+    technologies: "ReactJS, NodeJS, ExpressJS, and MongoDB",
     images: ["src/assets/notes/notes.png"],
   },
   {

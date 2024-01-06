@@ -1,0 +1,41 @@
+:root {
+  --primary-bg: #3d3d3d;
+  --secondary-bg: #2d2d2d;
+  --neutral-gray: #666;
+  --accent-color: #ff7eb9;
+  --accent-color1: #61dafb;
+  --accent-color2: #ffb862;
+  --accent-color3: #1a73e8;
+  --link-hover: #0d5cb6;
+  --button-color: #61dafb;
+  --button-color1: #2b2b2b;
+  --link-color: #61dafb;
+  --link-color1: #ffb862;
+  --border-color: #3e3e3e;
+  --text-color: #fff;
+  --border-color: #ccc;
+  --medium-pink: #ffa3c0;
+  --dusty-rose: #e6738e;
+  --rose-gold: #b76e79;
+  --link-hover-color: #ff7eb9;
+  --soft-blue: #87ceeb;
+  --subdued-green: #8fbc8f;
+  --deep-purple: #800080;
+  --warm-yellow: #ffd700;
+}
+.about-container section p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: "Montserrat-Regular;";
+}
+
+.about-container section {
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: var(--accent-color);
+  border-radius: 12px;
+  padding: 0.5rem;
+  border: 1px solid var(--text-color);
+}

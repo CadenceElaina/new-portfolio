@@ -7,7 +7,7 @@ const HeadingAnimation = () => {
 
   const sentenceVariants = {
     hidden: { opacity: 1 },
-    visible: { opacity: 1, transition: { delay: 0.5, staggerChildren: 0.08 } },
+    visible: { opacity: 1, transition: { delay: 0.1, staggerChildren: 0.05 } },
   };
 
   const letterVariants = {

@@ -1,0 +1,74 @@
+:root {
+  --primary-bg: #3d3d3d;
+  --secondary-bg: #2d2d2d;
+  --neutral-gray: #666;
+  --accent-color: #ff7eb9;
+  --accent-color1: #61dafb;
+  --accent-color2: #ffb862;
+  --accent-color3: #1a73e8;
+  --link-hover: #0d5cb6;
+  --button-color: #61dafb;
+  --button-color1: #2b2b2b;
+  --link-color: #61dafb;
+  --link-color1: #ffb862;
+  --border-color: #3e3e3e;
+  --text-color: #fff;
+  --border-color: #ccc;
+  --medium-pink: #ffa3c0;
+  --dusty-rose: #e6738e;
+  --rose-gold: #b76e79;
+  --link-hover-color: #ff7eb9;
+  --soft-blue: #87ceeb;
+  --subdued-green: #8fbc8f;
+  --deep-purple: #800080;
+  --warm-yellow: #ffd700;
+}
+.contact-container {
+  background-color: var(--accent-color);
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 75%;
+  border: 1px solid var(--text-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%; /* Ensure form groups take full width */
+}
+
+label {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  display: block; /* Make labels display as blocks */
+}
+
+input,
+textarea {
+  width: 100%; /* Make input and textarea take full width */
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.form-group button {
+  width: 100%;
+  background-color: var(--accent-color3);
+  color: var(--text-color);
+  padding: 0.5rem 1rem; /* Add horizontal padding for the button */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--link-hover);
+}
