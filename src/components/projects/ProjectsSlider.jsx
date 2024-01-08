@@ -70,10 +70,15 @@ const ProjectsSlider = () => {
               <h3>{currentProject.title}</h3>
             </div>
             <div className="project-links">
-              <Link to={`${currentProject.link}`}>
-                <FiExternalLink />
-                Demo
-              </Link>
+              <div className="tooltip">
+                <Link to={`${currentProject.link}`}>
+                  <FiExternalLink />
+                  Demo
+                  <span className="tooltiptext">
+                    Projects that use Render may take over a minute to load
+                  </span>
+                </Link>
+              </div>
               <Link to={`${currentProject.github}`}>
                 <FaGithub />
                 Github
