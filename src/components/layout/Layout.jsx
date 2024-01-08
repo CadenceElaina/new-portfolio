@@ -4,12 +4,12 @@ import Skills from "../Skills";
 import Contact from "../contact/Contact";
 import "./Layout.css";
 import {
-  FaHome,
   FaProjectDiagram,
   FaUser,
   FaEnvelope,
   FaGithub,
   FaLinkedin,
+  FaFileDownload,
 } from "react-icons/fa";
 import ProjectsSlider from "../projects/ProjectsSlider";
 import { Link } from "react-router-dom";
@@ -49,6 +49,16 @@ const Layout = () => {
             <Link to={"https://www.linkedin.com/in/cooper-burwell-674147195"}>
               <FaLinkedin />
               LinkedIn
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to={
+                "https://docs.google.com/document/d/1zksFP2wVczmwM9TSC9JXAXhsNNL1kz8p/edit?usp=sharing&ouid=116608798038618069913&rtpof=true&sd=true"
+              }
+            >
+              <FaFileDownload />
+              Resume
             </Link>
           </li>
         </ul>
