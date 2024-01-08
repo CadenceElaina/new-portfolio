@@ -17,7 +17,7 @@ import {
   SiCypress,
 } from "react-icons/si";
 import { TbFileTypeSql } from "react-icons/tb";
-import octopusIcon from "../assets/octopus-64x64.png";
+import octopusIcon from "../../public/assets/octopus-64x64.png";
 const skillsData = [
   { name: "JavaScript", icon: <FaJs /> },
   { name: "TypeScript", icon: <SiTypescript /> },
