@@ -32,7 +32,7 @@
 .app-container {
   margin: 0 auto;
   max-width: 95%;
-  min-height: 100vh;
+  max-height: 95vh;
   position: relative;
   overflow: hidden;
 }
@@ -44,7 +44,7 @@
   margin-top: 5vh;
   background-color: transparent;
   width: 100%;
-  min-height: 90vh;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -54,8 +54,11 @@
   background-color: var(--accent-color3);
 }
 .content-container {
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 75%;
+  min-height: 85vh;
 }
 .layout-nav {
   display: flex;
@@ -80,8 +83,15 @@
   padding: 1rem;
   cursor: pointer; /* Add cursor pointer */
 }
-
-.nav-item:hover {
+.nav-item a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.nav-item svg {
+  margin-right: 5px;
+}
+.nav-item:hover,
+.nav-item a:hover {
   color: var(--link-hover-color);
 }
 
@@ -96,4 +106,16 @@ h1 {
 
 p {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .content-container {
+    min-height: 50vh;
+    max-height: 50vh;
+  }
+  .about-container {
+    max-height: 50vh;
+  }
+  .container {
+    height: 90vh;
+  }
 }

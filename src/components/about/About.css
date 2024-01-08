@@ -24,18 +24,93 @@
   --warm-yellow: #ffd700;
 }
 .about-container section p {
-  color: var(--text-color);
+  padding: 0.25rem;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  font-family: "Montserrat-Regular;";
+  font-family: "Lato", sans-serif;
 }
-
+.about-container h3 {
+  padding: 1rem;
+  border-bottom: 1px solid var(--text-color);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 .about-container section {
   max-width: 75%;
   margin: 0 auto;
-  background-color: var(--accent-color);
+  background-color: var(--link-hover);
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 0.5rem;
   border: 1px solid var(--text-color);
+  box-shadow: 0 4px 8px var(--text-color);
+}
+.about-container section a {
+  color: var(--accent-color);
+}
+@media screen and (max-height: 730px) {
+  .about-container h3 {
+    font-size: 1.3rem;
+  }
+  .about-container section p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .about-container h3 {
+    font-size: 1rem;
+  }
+  .about-container section p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .about-container h3 {
+    font-size: 1rem;
+  }
+  .about-container section p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-container h3 {
+    font-size: 1rem;
+  }
+  .about-container section p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 875px) {
+  .about-container h3 {
+    font-size: 0.8rem;
+  }
+  .about-container section p {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 832px) {
+  .about-container h3 {
+    font-size: 0.8rem;
+  }
+  .about-container section p {
+    font-size: 0.75rem;
+  }
+  .about-container section {
+    width: 500px;
+    height: 250px;
+  }
+}
+@media screen and (max-height: 500px) {
+  .about-container h3 {
+    font-size: 0.8rem;
+  }
+  .about-container section p {
+    font-size: 0.75rem;
+  }
+  .about-container section {
+    width: 500px;
+    height: 250px;
+  }
 }

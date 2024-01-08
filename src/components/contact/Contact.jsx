@@ -60,6 +60,7 @@ const Contact = () => {
   return (
     <>
       <div className="contact-container">
+        <h3>Send me an email</h3>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>

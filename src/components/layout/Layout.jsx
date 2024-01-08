@@ -3,8 +3,16 @@ import About from "../about/About";
 import Skills from "../Skills";
 import Contact from "../contact/Contact";
 import "./Layout.css";
-import { FaHome, FaProjectDiagram, FaUser, FaEnvelope } from "react-icons/fa";
+import {
+  FaHome,
+  FaProjectDiagram,
+  FaUser,
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 import ProjectsSlider from "../projects/ProjectsSlider";
+import { Link } from "react-router-dom";
 
 const Layout = () => {
   const [selectedSection, setSelectedSection] = useState("about");
@@ -31,6 +39,17 @@ const Layout = () => {
             onClick={() => handleSectionChange("contact")}
           >
             <FaEnvelope /> Contact
+          </li>
+          <li className="nav-item">
+            <Link to={"https://github.com/CadenceElaina"}>
+              <FaGithub /> Github
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to={"https://www.linkedin.com/in/cooper-burwell-674147195"}>
+              <FaLinkedin />
+              LinkedIn
+            </Link>
           </li>
         </ul>
       </div>

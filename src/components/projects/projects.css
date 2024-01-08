@@ -30,26 +30,81 @@
   align-items: center;
   justify-content: center;
 }
+.projects-slider-inner {
+  max-width: 75%;
+}
 .project-card {
   color: var(--text-color);
-  background-color: var(--secondary-bg);
-  border: 1px solid var(--border-color);
-  max-height: 85vh;
+  display: flex;
   border-radius: 8px;
   overflow: hidden;
   margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--text-color);
   transition: transform 0.3s ease-in-out;
   position: relative;
+  background-color: var(--secondary-bg);
+  border-right: 10px solid var(--warm-yellow); /* Add this line for the border */
 }
 .projects {
   margin: 0 auto;
 }
 
-.projects-heading {
+.project-heading {
+  width: 100%;
+  background-color: var(--secondary-bg);
+  font-size: 1.3rem;
+  padding: 10px;
   text-align: center;
-  font-size: 2rem;
-  margin: 20px 0 20px 0;
+}
+.project-heading h3 {
+  font-size: 1.5rem;
+}
+.project-links {
+  display: flex;
+
+  justify-content: center;
+}
+@media screen and (max-width: 1380px) {
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1175px) {
+  .project-heading h3 {
+    font-size: 1rem;
+  }
+  .project-links a {
+    font-size: 0.9rem !important;
+  }
+  .project-description {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 915px) {
+  .project-card {
+    flex-direction: column;
+  }
+}
+.project-links svg {
+  margin-right: 5px;
+}
+.project-links a {
+  font-size: 1.1rem;
+  color: black;
+  padding: 0.5rem;
+  display: flex;
+  text-decoration: none;
+}
+.project-links a:hover {
+  color: var(--link-hover);
+}
+.project-info {
+  background-color: var(--text-color);
+}
+.project-description {
+  padding: 0.75rem;
+  color: var(--primary-bg);
 }
 
 .projects-row {
@@ -64,9 +119,9 @@
 }
 
 .project-image {
-  width: 900px;
-  height: 600px;
-  max-height: 70vh;
+  display: flex;
+  max-width: 75%;
+  max-height: 75%;
   object-fit: cover;
 }
 .project-image {
@@ -76,11 +131,7 @@
 .project-image.hovered {
   opacity: 0;
 }
-.project-description {
-  font-size: 1.2rem;
-  padding: 16px;
-  text-align: center;
-}
+
 .right-slider-button,
 .left-slider-button {
   position: absolute;

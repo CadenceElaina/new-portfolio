@@ -1,20 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import BackgroundAnimation from "./components/BackgroundAnimation";
-import {
-  FaGithub,
-  FaHome,
-  FaUser,
-  FaProjectDiagram,
-  FaEnvelope,
-  FaFileAlt,
-  FaLinkedin,
-} from "react-icons/fa";
-import HeadingAnimation from "./components/HeadingAnimation";
-import Skills from "./components/Skills";
-import ProjectsSlider from "./components/projects/ProjectsSlider";
-import Contact from "./components/contact/Contact";
-import Layout from "./components/layout/Layout";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   const [isPageLoaded, setPageLoaded] = useState(false);
@@ -30,8 +17,11 @@ function App() {
   }, []);
   return (
     <>
-      <BackgroundAnimation />
-      <Layout />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </>
   );
 }

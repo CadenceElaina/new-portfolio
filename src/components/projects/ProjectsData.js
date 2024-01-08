@@ -2,18 +2,25 @@ export const projects = [
   {
     title: "Finhub",
     alt: "Finhub / Google Finance Clone Project Image",
-    description: "finance app",
+    description:
+      "Get quotes, charts, and news. Create your profile to add to your watchlists and portfolios.",
     technologies:
       "React, TypeScript, ReCharts, Node.js, ExpressJS, and MongoDB",
     images: [
-      "src/assets/finhub/finhub1.png",
-      "src/assets/finhub/finhub2.png",
-      "src/assets/finhub/finhub3.png",
-      "src/assets/finhub/finhub5.png",
-      "src/assets/finhub/finhub6.png",
-      "src/assets/finhub/finhub7.png",
-      "src/assets/finhub/finhub8.png",
+      "src/assets/finhub/newfin1.png",
+      "src/assets/finhub/newfin2.png",
+      "src/assets/finhub/newfin3.png",
+      "src/assets/finhub/newfin4.png",
+      "src/assets/finhub/newfin5.png",
+      "src/assets/finhub/newfin6.png",
+      "src/assets/finhub/newfin7.png",
+      "src/assets/finhub/newfin8.png",
+      "src/assets/finhub/newfin9.png",
+      "src/assets/finhub/newfin10.png",
+      "src/assets/finhub/newfin11.png",
     ],
+    link: "https://fin-server-q3o4.onrender.com/",
+    github: "https://github.com/CadenceElaina/fin-client",
   },
   {
     title: "Zwitter",
@@ -27,6 +34,8 @@ export const projects = [
       "src/assets/zwitter/zwitter1.3.png",
       "src/assets/zwitter/zwitter1.4.png",
     ],
+    link: "https://zwitter-drab.vercel.app/",
+    github: "https://github.com/CadenceElaina/zwitter",
   },
   {
     title: "Blogs Web App",
@@ -41,6 +50,8 @@ export const projects = [
       "src/assets/blogs/blogs4.png",
       "src/assets/blogs/blogs5.png",
     ],
+    link: "https://bloglist-17lz.onrender.com/",
+    github: "https://github.com/CadenceElaina/bloglist",
   },
   {
     title: "Library Web App",
@@ -54,6 +65,8 @@ export const projects = [
       "src/assets/library/library4.png",
       "src/assets/library/library5.png",
     ],
+    link: "https://library-grapql.netlify.app/",
+    github: "https://github.com/CadenceElaina/library-client",
   },
   {
     title: "Old Portfolio Website",
@@ -64,6 +77,8 @@ export const projects = [
       "src/assets/oldportfolio/portfolio1.png",
       "src/assets/oldportfolio/portfolio2.png",
     ],
+    link: "https://cadenceelaina.netlify.app/",
+    github: "https://github.com/CadenceElaina/portfolio_react_sanity",
   },
   {
     title: "Inflation Calculator",
@@ -75,6 +90,9 @@ export const projects = [
       "src/assets/inflationCalculator/calculator1.png",
       "src/assets/inflationCalculator/calculator2.png",
     ],
+    link: "https://inflationcalculator.netlify.app/",
+    github:
+      "https://github.com/CadenceElaina/inflation_calculator_react_tailwind",
   },
   {
     title: "Old Finhub",
@@ -90,6 +108,8 @@ export const projects = [
       "src/assets/oldfinhub/oldfinhub5.png",
       "src/assets/oldfinhub/oldfinhub6.png",
     ],
+    link: "https://finhub-financeapp.netlify.app/",
+    github: "https://github.com/CadenceElaina/finance-app/tree/main",
   },
   {
     title: "Snake",
@@ -97,6 +117,8 @@ export const projects = [
     description: "Play the classic game snake",
     technologies: "JavaScript",
     images: ["src/assets/snake/snake.png"],
+    link: "https://snakevanillajs.netlify.app/",
+    github: "https://github.com/CadenceElaina/JavaScript-Snake-Game",
   },
   {
     title: "Phonebook",
@@ -104,6 +126,8 @@ export const projects = [
     description: "Add to the phonebook",
     technologies: "ReactJS, NodeJS, ExpressJS, and MongoDB",
     images: ["src/assets/phonebook/phonebook.png"],
+    link: "https://phonebook-fullstack-1z2c.onrender.com/",
+    github: "https://github.com/CadenceElaina/phonebook-fullstack",
   },
   {
     title: "Appointment Web App",
@@ -111,6 +135,8 @@ export const projects = [
     description: "Add or remove appointments. Filter the list.",
     technologies: "ReactJS",
     images: ["src/assets/apts/apts.png"],
+    link: "https://manageyourappointments.netlify.app/",
+    github: "https://github.com/CadenceElaina?page=1&tab=repositories",
   },
   {
     title: "Pagination",
@@ -118,6 +144,8 @@ export const projects = [
     description: "Table that uses pagination, filtering, and search.",
     technologies: "ReactJS",
     images: ["src/assets/pagination/pagination.png"],
+    link: "https://tablewithpagination-search-asc-dsc.netlify.app/",
+    github: "https://github.com/CadenceElaina/task1-react?tab=readme-ov-file",
   },
   {
     title: "Shiftbid",
@@ -125,6 +153,8 @@ export const projects = [
     description: "Rank your preferred shifts.",
     technologies: "ReactJS",
     images: ["src/assets/shiftbid/shiftbid.png"],
+    link: "https://shiftbid.netlify.app/",
+    github: "https://github.com/CadenceElaina/shiftbid",
   },
   {
     title: "Todo",
@@ -132,6 +162,8 @@ export const projects = [
     description: "Todo web app",
     technologies: "ReactJS",
     images: ["src/assets/todo/todo.png"],
+    link: "https://thegreatestmostoriginaltodoapp.netlify.app/",
+    github: "https://github.com/CadenceElaina/todo_app",
   },
   {
     title: "Notes",
@@ -139,6 +171,8 @@ export const projects = [
     description: "Notes full-stack app",
     technologies: "ReactJS, NodeJS, ExpressJS, and MongoDB",
     images: ["src/assets/notes/notes.png"],
+    link: "https://notes-app-57bk.onrender.com/",
+    github: "https://github.com/CadenceElaina/notes-app",
   },
   {
     title: "Links",
@@ -146,5 +180,7 @@ export const projects = [
     description: "Link CRUD app",
     technologies: "ReactJS",
     images: ["src/assets/links/links.png"],
+    link: "https://yourlinks.netlify.app/",
+    github: "https://github.com/CadenceElaina/Link-App",
   },
 ];

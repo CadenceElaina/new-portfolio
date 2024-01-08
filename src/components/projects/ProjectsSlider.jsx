@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { projects } from "./ProjectsData";
 import "./projects.css";
+import { Link } from "react-router-dom";
+import { FiExternalLink } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa";
 const ProjectsSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -27,7 +30,7 @@ const ProjectsSlider = () => {
         setHoveredIndex(
           (prevIndex) => (prevIndex + 1) % projects[currentIndex].images.length
         );
-      }, 1500); // Adjust the interval as needed
+      }, 1000); // Adjust the interval as needed
     } else {
       // Clear interval when not hovering
       clearInterval(intervalId);
@@ -48,23 +51,39 @@ const ProjectsSlider = () => {
 
   return (
     <div className="projects-slider">
-      <div className="project-card">
-        <img
-          src={
-            isHovered
-              ? currentProject.images[hoveredIndex]
-              : currentProject.images[0]
-          }
-          alt={currentProject.alt}
-          className="project-image"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        />
+      <div className="projects-slider-inner">
+        <div className="project-card">
+          <img
+            src={
+              isHovered
+                ? currentProject.images[hoveredIndex]
+                : currentProject.images[0]
+            }
+            alt={currentProject.alt}
+            className="project-image"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
 
-        <div className="project-description">
-          <h3>{currentProject.title}</h3>
-          <p>{currentProject.description}</p>
-          <p>Technologies: {currentProject.technologies}</p>
+          <div className="project-info">
+            <div className="project-heading">
+              <h3>{currentProject.title}</h3>
+            </div>
+            <div className="project-links">
+              <Link to={`${currentProject.link}`}>
+                <FiExternalLink />
+                Demo
+              </Link>
+              <Link to={`${currentProject.github}`}>
+                <FaGithub />
+                Github
+              </Link>
+            </div>
+            <div className="project-description">
+              <p>{currentProject.description}</p>
+              <p>Technologies: {currentProject.technologies}</p>
+            </div>
+          </div>
         </div>
       </div>
       <button className="right-slider-button" onClick={handleNext}>

@@ -24,12 +24,16 @@
   --warm-yellow: #ffd700;
 }
 .contact-container {
-  background-color: var(--accent-color);
+  width: 60%;
+  height: 100%;
+  background-color: var(--link-hover);
   border-radius: 12px;
   margin: 0 auto;
   padding: 1rem;
-  max-width: 75%;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--border-color);
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 form {
