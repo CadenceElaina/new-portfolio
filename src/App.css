@@ -236,3 +236,28 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 450px) {
+  .container {
+    justify-content: flex-start !important;
+    padding: 5px !important;
+    height: auto !important;
+    flex-direction: column;
+  }
+  .content-container {
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 75px;
+  }
+  .heading {
+    margin: 0 auto;
+    max-height: 255px;
+  }
+
+  .layout-nav li {
+    font-size: 0.75rem;
+  }
+
+  .about-container .skill-card {
+    width: 20%;
+  }
+}
