@@ -50,67 +50,8 @@
 .about-container section a {
   color: var(--accent-color);
 }
-@media screen and (max-height: 730px) {
-  .about-container h3 {
-    font-size: 1.3rem;
-  }
-  .about-container section p {
-    font-size: 1rem;
-  }
-}
 @media screen and (max-width: 1220px) {
-  .about-container h3 {
-    font-size: 1rem;
-  }
   .about-container section p {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 1055px) {
-  .about-container h3 {
-    font-size: 1rem;
-  }
-  .about-container section p {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .about-container h3 {
-    font-size: 1rem;
-  }
-  .about-container section p {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 875px) {
-  .about-container h3 {
-    font-size: 0.8rem;
-  }
-  .about-container section p {
-    font-size: 0.75rem;
-  }
-}
-@media screen and (max-width: 832px) {
-  .about-container h3 {
-    font-size: 0.8rem;
-  }
-  .about-container section p {
-    font-size: 0.75rem;
-  }
-  .about-container section {
-    width: 500px;
-    height: 250px;
-  }
-}
-@media screen and (max-height: 500px) {
-  .about-container h3 {
-    font-size: 0.8rem;
-  }
-  .about-container section p {
-    font-size: 0.75rem;
-  }
-  .about-container section {
-    width: 500px;
-    height: 250px;
+    font-size: 0.75rem !important;
   }
 }

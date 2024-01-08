@@ -122,131 +122,14 @@ body {
   padding: 1rem;
   margin: 0 auto;
 }
-@media screen and (max-height: 760px) {
-  .skill-card {
-    width: calc(20% - 10px);
-    height: calc(20% - 10px);
-  }
-  .skill-icon img {
-    width: 16px;
-    height: 16px;
-  }
-  .skill-icon svg {
-    width: 16px;
-    height: 16px;
-  }
-}
-@media screen and (max-width: 1165px) {
-  .skill-card {
-    margin: 2px;
-  }
-}
-@media screen and (max-width: 1055px) {
-  .skill-card {
-    font-size: 0.75rem;
-  }
-}
-@media screen and (max-width: 1055px) {
-  .skill-card {
-    font-size: 0.75rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .skills-container {
-    max-width: 100%;
-    width: 100%;
-  }
-  .skill-card {
-    font-size: 0.6rem;
-  }
-}
-@media screen and (max-width: 832px) {
-  .skill-card {
-    width: calc(14% - 10px);
-    height: calc(14% - 10px);
-  }
-  .skill-icon img {
-    width: 12px;
-    height: 12px;
-  }
-  .skill-icon svg {
-    width: 12px;
-    height: 12px;
-  }
-  .skill-card {
-  }
-}
-@media screen and (max-height: 615px) {
-  .skill-card {
-    width: calc(14% - 10px);
-    height: calc(14% - 10px);
-  }
-  .skill-icon img {
-    width: 12px;
-    height: 12px;
-  }
-  .skill-icon svg {
-    width: 12px;
-    height: 12px;
-  }
-  .skill-card {
-  }
-}
-@media screen and (max-height: 545px) {
-  .skill-card {
-    width: calc(18% - 10px);
-    height: calc(18% - 10px);
-  }
-  .skill-icon img {
-    width: 10px;
-    height: 10px;
-  }
-  .skill-icon svg {
-    width: 10px;
-    height: 10px;
-  }
-  .skill-card {
-    font-size: 0.5rem;
-  }
-}
-@media screen and (max-width: 670px) {
-  .heading h1 {
-    font-size: 1rem;
-  }
-  .heading p {
-    font-size: 0.75rem;
-  }
-  .layout-nav li {
-    font-size: 0.6rem;
-  }
-  .app-container,
-  .container {
-    min-height: 100vh;
-  }
-  .about-container section {
-    max-width: 300px !important;
-    max-height: 200px;
-  }
+
+@media screen and (max-width: 1220px) {
   .about-container section p {
-    font-size: 0.55rem !important;
-  }
-}
-@media screen and (max-height: 470px) {
-  .skill-card {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 450px) {
-  .container {
-    justify-content: flex-start !important;
-    padding: 5px !important;
-    height: auto !important;
-    flex-direction: column;
+    font-size: 0.75rem !important;
   }
   .content-container {
     height: 100%;
     margin: 0 auto;
-    margin-top: 75px;
   }
   .heading {
     margin: 0 auto;
@@ -259,5 +142,210 @@ body {
 
   .about-container .skill-card {
     width: 20%;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .skills-container {
+    max-width: 100%;
+  }
+  .skills-container .skill-card {
+    margin: 1px;
+  }
+}
+
+/* @media screen and (max-width: 930px) {
+  .about-container section .about-text h3 {
+    font-size: 1rem;
+  }
+  .about-container section .about-text p {
+    font-size: 0.75rem !important;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-self: baseline;
+    margin-top: 0px;
+    top: 0;
+    padding: 0;
+  }
+} */
+@media screen and (max-width: 1310px) {
+  .about-container h3 {
+    font-size: 1.1rem !important;
+  }
+  .about-container section p {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .about-container section {
+    max-width: 60% !important;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .about-container {
+    display: flex;
+  }
+  .content-container {
+    min-height: auto !important;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .heading {
+    margin: 0 auto;
+  }
+  .heading h1 {
+    font-size: 1.2rem;
+  }
+  .heading p {
+    font-size: 0.9rem;
+  }
+  .heading h1,
+  .heading p {
+    text-align: center;
+  }
+  .about-container h3 {
+    font-size: 1rem !important;
+  }
+  .about-container section p {
+    font-size: 0.75rem !important;
+  }
+  .layout-nav ul {
+    flex-direction: row !important;
+  }
+  .layout-nav li {
+    font-size: 0.75rem;
+  }
+  .skill-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 20% !important;
+    height: 20% !important;
+    font-size: 0.55rem !important;
+  }
+}
+@media screen and (max-height: 670px) {
+  .app-container {
+  }
+  .about-container section {
+    max-width: 60% !important;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .about-container {
+    display: flex;
+  }
+  .content-container {
+    min-height: auto !important;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .heading {
+    margin: 0 auto;
+  }
+  .heading h1 {
+    font-size: 1.2rem;
+  }
+  .heading p {
+    font-size: 0.9rem;
+  }
+  .heading h1,
+  .heading p {
+    text-align: center;
+  }
+  .about-container h3 {
+    font-size: 1.1rem !important;
+  }
+  .about-container section p {
+    font-size: 0.9rem !important;
+  }
+  .layout-nav ul {
+    flex-direction: row !important;
+  }
+  .layout-nav li {
+    font-size: 0.75rem;
+  }
+}
+/* @media screen and (max-height: 670px) {
+  .container {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+  .heading {
+    min-width: none !important;
+    max-height: 10%;
+  }
+} */
+@media screen and (max-height: 670px) {
+  .container {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+  .heading p,
+  .heading h1,
+  .heading li {
+    margin: 0 auto;
+  }
+  .content-container {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .content-container {
+    width: 100% !important;
+  }
+  .about-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 475px) {
+  .heading h1 {
+    margin: 0 auto;
+  }
+  .heading p {
+    margin: 0 auto;
+  }
+  .heading li {
+    margin: 0 auto;
+    font-size: 0.65rem !important;
+  }
+}
+@media screen and (max-width: 355px) {
+  .skill-card svg {
+    width: 10px;
+    height: 10px;
+  }
+  .skill-card {
+    max-height: 30px;
+    min-width: 55px;
+    margin: 0 auto;
+    font-size: 0.55rem;
+  }
+  .about-container section h3 {
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.75rem !important;
+  }
+  .about-container section .about-text p {
+    font-size: 0.65rem !important;
   }
 }

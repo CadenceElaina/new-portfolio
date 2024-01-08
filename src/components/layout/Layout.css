@@ -107,15 +107,17 @@ h1 {
 p {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1000px) {
-  .content-container {
-    min-height: 50vh;
-    max-height: 50vh;
-  }
-  .about-container {
-    max-height: 50vh;
-  }
+@media screen and (max-height: 670px) {
   .container {
-    height: 90vh;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+  .heading p,
+  .heading h1,
+  .heading li {
+    margin: 0 auto;
+  }
+  .content-container {
+    margin-top: 5px;
   }
 }
