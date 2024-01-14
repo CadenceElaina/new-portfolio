@@ -107,17 +107,3 @@ h1 {
 p {
   margin-bottom: 20px;
 }
-@media screen and (max-height: 670px) {
-  .container {
-    margin-top: 0 !important;
-    padding: 0 !important;
-  }
-  .heading p,
-  .heading h1,
-  .heading li {
-    margin: 0 auto;
-  }
-  .content-container {
-    margin-top: 5px;
-  }
-}
